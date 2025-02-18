@@ -1,0 +1,248 @@
+/*网页入口板块*/
+.entry {
+    height:500px;
+    background-color: #f5f5f5;
+}
+.entry .container {
+    position: relative;
+    height: 500px;
+}
+.entry .container .category {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 251px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.entry .container .category a {
+    color:#fff ;
+    line-height: 50px;
+}
+.entry .container .category li {
+    position: relative;
+    height: 50px;
+    padding-left: 36px;
+}
+.entry .container .category li:hover {
+    background-color: #27ba9b;
+}
+.entry .category span {
+    font-size: 14px;
+}
+.entry .category span:first-child {
+    margin-left: 15px;
+}
+.entry .category a::after {
+    position: absolute;
+    top: 19px;
+    right: 19px;
+    content: '';
+    width:6px ;
+    height: 11px;
+    background:url(../images/sprites.png) -80px -110px;
+}
+.entry .prev {
+    position: absolute;
+    top: 228px;
+    left: 260px;
+    width: 45px;
+    height: 45px;    
+    border-radius: 50%;
+    background: url(../images/sprites.png) 13px -60px;
+    background-color: rgba(0, 0, 0, .2);
+}
+.entry .next {
+    position: absolute;
+    top: 228px;
+    right: 10px;
+    width: 45px;
+    height: 45px;    
+    border-radius: 50%;
+    background: url(../images/sprites.png) -22px -60px;
+    background-color: rgba(0, 0, 0, .2);
+}
+.goodnews {
+    height: 520px;
+}
+.goodnews .goodshd {
+    height: 115px;
+    line-height: 115px;
+}
+.goodnews .goodshd h2 {
+    height: 115px;
+    font-size: 29px;
+    font-weight: 400;
+}
+.goodnews .goodshd span {
+    font-size: 16px;
+    color: #999;
+    margin-left:15px;
+}
+.goodnews .goodshd a {
+    color: #666;
+}
+.goodnews .goodshd a::after {
+    display: inline-block;
+    margin-left: 13px;
+    content: '';
+    width: 7px;
+    height: 13px;
+    background:url(../images/sprites.png) 0 -110px;
+}
+.goodnews .glist li {
+    float: left;
+    width: 304px;
+    height: 405px;
+    margin-right: 8px;
+    background-color: #f0f9f4;
+    line-height: 1;
+    text-align: center;
+}
+.goodnews .glist li:last-child {
+    margin-right: 0;
+}
+.goodnews .glist li img {
+    width: 100%;
+} 
+.goodnews .glist li h3 {
+    line-height: 30px;
+    margin-top: 22px;
+    font-size: 20px;
+}
+.goodnews .glist li p {
+    color: #9a2e1f;
+    font-size: 23px;
+}
+/*推荐模块*/
+.popular {
+    height: 520px;
+}
+.popular .popularhd {
+    height: 115px;
+    line-height: 115px;
+}
+.popular .popularhd h2 {
+    height: 115px;
+    font-size: 29px;
+    font-weight: 400;
+}
+.popular .popularhd span {
+    font-size: 16px;
+    color: #999;
+    margin-left:15px;
+}
+.popular .plist li {
+    float: left;
+    width: 304px;
+    height: 405px;
+    margin-right: 8px;
+    line-height: 1;
+    text-align: center;
+}
+.popular .plist li:last-child {
+    margin-right: 0;
+}
+.popular .plist li img {
+    width: 100%;
+}
+.popular .plist li h3 {
+    line-height: 30px;
+    margin-top: 22px;
+    font-size: 20px;
+}
+.popular .plist p {
+    font-size: 16px;
+    color: #999;
+    margin-left:10px;
+    margin-top: 10px;
+}
+/*生鲜模块*/
+.fresh {
+    height: 673px;
+}
+.fresh .freshhd {
+    height: 115px;
+    line-height: 115px;
+}
+.fresh .freshhd h2 {
+    height: 115px;
+    font-size: 29px;
+    font-weight: 400;
+}
+.fresh .freshhd li {
+    float: right;
+    height: 20px;
+    margin-left: 22px;
+}
+.fresh .freshhd a {
+    height: 16px;
+    display: inline-block;
+    line-height: 1;
+    color: #333333;
+}
+.fresh .freshhd a:hover {
+    height:20px ;
+    width: 46px;
+    color: #fff;
+    line-height: 1;
+    background-color: #27ba9b;
+}
+.fresh .freshhd .zuihou {
+    color: #666;
+}
+.fresh .freshhd .zuihou::after {
+    display: inline-block;
+    margin-left: 13px;
+    content: '';
+    width: 7px;
+    height: 13px;
+    background:url(../images/sprites.png) 0 -110px;
+}
+.fresh .flist {
+    height: 610px;
+    margin-bottom: 10px;
+}
+.fresh .flist .left-picture {
+    float: left;
+    width: 240px;
+    height: 610px;
+    background-color: pink;
+}
+.fresh .left-picture img {
+    width: 100%;
+    height: 100%;
+}
+.fresh .flist .num1box {
+    float: right;
+    width: 992px;
+    height: 610px;
+    background-color: #fff;
+}
+.fresh .flist .right-picture li {
+    display: inline-block;
+    width: 242px;
+	height: 304px;
+}
+.fresh .flist .right-picture img {
+    display: inline-block;
+    width: 184px;
+    height: 184px;
+}
+.fresh .flist .right-picture p {
+    font-size: 12px;
+    color: #333333;
+    line-height: 13px;
+}
+.fresh .flist .right-picture span {
+    color: #9a2e1f;
+    font-size: 23px;
+}
+
+
+
+
+
+
+
+ 

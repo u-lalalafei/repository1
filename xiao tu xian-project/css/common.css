@@ -1,0 +1,167 @@
+/*版心的公共类*/
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+/*-----------快捷菜单*/
+.xtx-shortcut {
+    height: 52px; 
+    background-color: #333333;
+}
+.xtx-shortcut.container {
+    height: 52px;
+}
+.xtx-shortcut ul li {
+    float: left;
+    line-height: 52px;
+    color: #fff;
+}
+.xtx-shortcut ul a {
+    margin: 16px;
+    font-size: 14px;
+    color: #fff;
+}
+.xtx-shortcut li:last-child a {
+    margin: 0 auto;
+}.xtx-shortcut li:last-child::before {
+    content: '';
+    display: inline-block;
+    
+    margin-right: 8px;
+    margin-top: -3px;
+    width: 11px;
+    height: 16px;
+    background:url(../images/sprites.png) -160px -70px;
+    vertical-align: middle;
+}
+
+/*-----主导航 xtx-maincut----*/
+.xtx-maincut {
+    height: 130px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.xtx-maincut .logo {
+    height:70px ;
+    width:207px ;
+    margin-left: 25px;
+    margin-right: 48px;
+}
+.xtx-maincut .logo a {
+    display: inline-block;
+    height: 70px;
+    width: 207px;
+    background: url(../images/logo.png);
+    background-size: 100% 100%;
+}
+.xtx-maincut nav {
+    margin-left: 48px;
+}
+.xtx-maincut nav ul li {
+    float: left;
+    height: 70px;
+    line-height: 70px;
+    margin-right: 40px;
+}
+.xtx-maincut nav li a:hover {
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+    padding-bottom: 7px;
+}
+.xtx-maincut .search {
+    position: relative;
+    height: 30px;
+    width: 172px;
+    margin-top: 24px;
+    margin-left: 34px;
+}
+.xtx-maincut .search {
+    height: 30px;
+    width: 172px;
+    border-bottom: 2px sollid #e7e7e7;
+    padding-left: 31px;
+}
+.xtx-maincut .search::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    background: url(../images/sprites.png) -80px -70px;
+    
+}
+.xtx-maincut .cart {
+    position: relative;
+    width: 23px;
+    height: 23px;
+    background:url(../images/sprites.png) -120px -70px;
+    margin-top: 28px;
+    margin-left: 15px;
+}
+.xtx-maincut .cart span {
+    position: absolute;
+    top:-5px ;
+    right: -12px;
+    border-radius: 8px;
+    width: 20px;
+    height: 15px;
+    background-color: #e26237;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    line-height: 15px;
+}
+/*-----宣传模块---*/
+.service {
+    height: 174px;
+    background-color: #333;
+}
+.service .container {
+    height:173px ;
+    width: 1393px;
+    border-bottom: 1px solid #434343;
+}
+.service .container a {
+    float: left;
+    width: 30.33%;
+    height: 173px;
+    margin-right: 19px;
+    text-align: center;
+    line-height: 173px;
+    font-size: 28px;
+    color: #fff; 
+}
+.service .container a::before {
+    display: inline-block;
+    content:'';
+    height: 58px;
+    width:58px ;
+    background:url(../images/sprites.png) 0 0 ;
+    vertical-align: middle;
+}
+.service .container a:nth-child(2)::before {
+    background-position: -130px 0;
+}
+.service .container a:nth-child(3)::before {
+    background-position: -65px 0;
+}
+/*----版权信息*/
+.copyright {
+    height: 168px;
+    background-color: #333;
+}
+.copyright .container {
+    height: 168px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 41px;
+}
+.copyright .container a {
+    color: #999;
+    line-height: 35px;
+}
+.copyright .container span {
+    color: #999;
+}
