@@ -1,0 +1,392 @@
+/* 全局样式 */
+body {
+    font-family: 'ZCOOL XiaoWei', serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/a.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #4a4a4a;
+}
+
+header {
+    background-color: rgba(120, 146, 98, 0.8); /* 半透明绿色 */
+    color: #f5f5dc;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+
+header h1 {
+    font-family: 'Ma Shan Zheng', cursive;
+    font-size: 3rem;
+    margin: 20px;
+}
+
+/* 搜索框样式 */
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#search-input {
+    padding: 10px;
+    border: 2px solid #789262;
+    border-radius: 5px 0 0 5px; /* 左侧圆角 */
+    width: 300px;
+    font-size: 1rem;
+    outline: none;
+    border-right: none; /* 去掉右侧边框 */
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #789262;
+    color: #f5f5dc;
+    border: 2px solid #789262;
+    border-radius: 0 5px 5px 0; /* 右侧圆角 */
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #6b4226;
+}
+
+.bamboo-border {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: url('bamboo-pattern.png') repeat-x;
+    background-size: contain;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #6b4226;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.option {
+    background-color: #fff;
+    border: 2px solid #789262;
+    border-radius: 10px;
+    padding: 15px;
+    width: 30%;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.option:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.option img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.option:hover img {
+    transform: scale(1.1);
+}
+
+.option h2 {
+    font-family: '字酷堂清楷体', cursive;
+    font-size: 1.5rem;
+    color: #789262;
+    margin: 10px 0;
+}
+
+.option p {
+    font-size: 0.9rem;
+    color: #6b4226;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(120, 146, 98, 0.8); /* 半透明绿色 */
+    color: #f5f5dc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 1.2rem;
+}
+
+.option:hover .overlay {
+    opacity: 1;
+}
+
+.content {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #789262;
+    animation: fadeIn 0.5s ease-in-out;
+    scroll-margin-top: 20px;
+}
+
+.content-img {
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+footer {
+    background-color: #789262;
+    color: #f5f5dc;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+footer .bamboo-border {
+    top: -10px;
+}
+
+/* 添加加载动画样式 */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-out;
+}
+
+.loader .tea-cup {
+    width: 60px;
+    height: 60px;
+    border: 5px solid #789262;
+    border-radius: 0 0 30px 30px;
+    position: relative;
+    animation: fill 2s infinite;
+}
+
+.loader .tea-cup:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    border: 5px solid #789262;
+    border-left: none;
+    border-radius: 0 30px 30px 0;
+    right: -20px;
+    top: 5px;
+}
+
+@keyframes fill {
+    0% { box-shadow: inset 0 0 0 #789262; }
+    50% { box-shadow: inset 0 -60px 0 #789262; }
+    100% { box-shadow: inset 0 0 0 #789262; }
+}
+
+/* 改进背景效果 */
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), 
+                      url('images/a.png');
+    background-blend-mode: lighten;
+}
+
+/* 添加茶叶装饰效果 */
+.intro-decoration {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.tea-leaf {
+    font-size: 1.5rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+.tea-leaf:nth-child(1) { animation-delay: 0s; }
+.tea-leaf:nth-child(2) { animation-delay: 0.5s; }
+.tea-leaf:nth-child(3) { animation-delay: 1s; }
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(10deg); }
+}
+
+/* 改进选项卡片 */
+.option {
+    box-shadow: 0 4px 8px rgba(107, 66, 38, 0.1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.option:hover {
+    box-shadow: 0 14px 28px rgba(107, 66, 38, 0.2), 
+                0 10px 10px rgba(107, 66, 38, 0.1);
+}
+
+/* 内容卡片样式 */
+.health-content, .remedy-content, .food-content {
+    font-family: 'ZCOOL XiaoWei', sans-serif;
+    line-height: 1.6;
+}
+
+.benefit-card, .remedy-card, .pairing-card {
+    background-color: rgba(255, 253, 245, 0.8);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 4px solid #789262;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.small-benefit-card {
+    background-color: rgba(255, 253, 245, 0.6);
+    padding: 12px;
+    border-radius: 6px;
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.benefit-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+/* 标题样式 */
+h3.category-title {
+    color: #6b4226;
+    font-family: 'Ma Shan Zheng', cursive;
+    border-bottom: 1px dashed #789262;
+    padding-bottom: 5px;
+}
+
+h4 {
+    color: #789262;
+    margin-top: 0;
+}
+
+/* 标签样式 */
+.label {
+    font-weight: bold;
+    color: #6b4226;
+    display: inline-block;
+    width: 60px;
+}
+
+.ingredients {
+    color: #789262;
+    font-style: italic;
+}
+
+/* 特殊效果 */
+.highlight {
+    background-color: rgba(120, 146, 98, 0.1);
+    padding: 3px 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.warning {
+    color: #c7254e;
+    background-color: #f9f2f4;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.warning-list {
+    border-left: 3px solid #c7254e;
+    padding-left: 15px;
+}
+
+/* 图标样式 */
+.icon {
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
+/* 响应式调整 */
+@media (max-width: 100%) {
+    .benefit-cards-container {
+        flex-direction: column;
+    }
+    
+    .small-benefit-card {
+        min-width: auto;
+    }
+}
+
+/* 添加响应式设计 */
+@media (max-width: 100%) {
+    .options {
+        flex-direction: column;
+    }
+    
+    .option {
+        width: 100%;
+    }
+    
+    #search-input {
+        width: 200px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+/* 添加页脚社交图标 */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.social-icons a {
+    color: #789262;
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}

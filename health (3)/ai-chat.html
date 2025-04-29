@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>灵茶医舍 - 与AI对话</title>
+    <link rel="stylesheet" href="ai-chat.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>灵茶医舍</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="ai-chat">
+            <div class="chat-header">
+                <h2><i class="fas fa-leaf"></i> 灵茶小助手</h2>
+                <div class="tea-divider">
+                    <div class="tea-cup"></div>
+                </div>
+            </div>
+            <div id="chat-box">
+                <!-- 聊天记录将显示在这里 -->
+                <div class="welcome-message">
+                    <p>欢迎来到灵茶医舍！我是您的茶道助手，可以为您解答关于茶与健康的各种问题。</p>
+                    <div class="tea-icon"><i class="fas fa-mug-hot"></i></div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input" placeholder="请输入您关于茶与健康的问题...">
+                <button id="send-button">
+                    <span>发送</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 灵茶医舍. 版权所有.</p>
+            <div class="social-icons">
+                <i class="fab fa-weixin"></i>
+                <i class="fab fa-weibo"></i>
+                <i class="fas fa-envelope"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="ai-chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>灵茶医舍 - 茶与健康</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/tea-icon.png" type="image/png">
+<meta name="description" content="灵茶医舍 - 探索茶与健康的奥秘，体验传统茶疗养生之道">
+</head>
+<body>
+    <header>
+        <div class="loader">
+            <div class="tea-cup"></div>
+            <p>正在沏茶...</p>
+        </div>
+        <h1>灵茶医舍</h1>
+        <!-- 搜索框和按钮合并 -->
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="输入你的问题，与AI对话...">
+            <button id="search-button">搜索</button>
+        </div>
+        <div class="bamboo-border"></div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p>欢迎来到灵茶医舍，品茶养生，静心修身。</p>  
+        </section>
+
+        <section class="options">
+            <div class="option" id="tea-health">
+                <img src="./images/1.png" alt="茶与养生">
+                <h2>茶与养生</h2>
+                <p>井冈翠绿是一种优质绿茶，产自井冈山地区，因其色泽翠绿、香气清高、滋味鲜爽而闻名。作为绿茶的一种，它富含茶多酚、咖啡碱、氨基酸（如茶氨酸）、维生素等活性成分，在养生保健方面都有功效。</p>
+                <div class="overlay">点击探索</div>
+            </div>
+            <div class="option" id="tea-remedy">
+                <img src="./images/2.png" alt="茶疗方剂">
+                <h2>茶疗方剂</h2>
+                <p>井冈翠绿作为优质绿茶，在传统茶疗中可与其他食材、药材搭配，以增强特定养生效果。</p>
+                <div class="overlay">点击探索</div>
+            </div>
+            <div class="option" id="tea-food">
+                <img src="./images/3.png" alt="茶食搭配">
+                <h2>茶食搭配</h2>
+                <p>井冈翠绿作为一款清新鲜爽的高山绿茶，其茶性微寒、香气清雅，适合搭配一些清淡、微甜或咸鲜的茶点与茶餐，既能衬托茶香，又能避免掩盖茶味或造成口感冲突。</p>
+                <div class="overlay">点击探索</div>
+            </div>
+        </section>
+
+        <section class="content" id="content">
+            <!-- 动态加载的内容将显示在这里 -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 灵茶医舍. 版权所有.</p>
+        <div class="bamboo-border"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
